@@ -12,6 +12,8 @@ db = dataset.connect('sqlite:///orders.db')
 # create your database of orders table
 table = db['orders']
 
+app.add_url_rule('/', 'homepage_redirect', redirect_to='/')
+
 @app.route('/')
 def home():
 	return render_template('index.html')

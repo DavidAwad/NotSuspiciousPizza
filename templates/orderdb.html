@@ -1,0 +1,94 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suspicious Pizza's</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <script src="js/vendor/modernizr.js"></script>
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='stylesheet.css') }}">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='foundation.css') }}">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='mfglabs_iconset.css') }}">
+    <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon"/>
+  </head>
+  <body style="background:">
+     
+ 
+  <div class="row">
+    <div class="large-12 columns">
+      <div class="nav-bar right">
+       <ul class="button-group">
+         <!--<li><a href="#" class="button">Link 1</a></li>
+         <li><a href="#" class="button">Link 2</a></li>
+         <li><a href="#" class="button">Link 3</a></li>
+         <li><a href="#" class="button">Link 4</a></li> -->
+        </ul>
+      </div>
+      <h1 href="/index.html" id="cottonballs">Completely Not Suspicious Pizza.<small> Seriously not suspicious at all.</small></h1>
+      <hr/>	
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-4 columns" role="content">
+	<h1 style="font-family:langdon">Order Database</h1>
+	{% for signature in signatures %}	
+	<div class="panel">
+	<h2 style="font-family:langdon">{{signature['name']}}</h2>
+	<p>{{signature['order']}}</p>
+	<p>{{signature['number']}}</p>
+	<p>{{signature['email']}}</p>
+	</div>
+	</hr>
+	{% endfor %}
+	</div>
+
+<aside class="large-3 columns">
+      <h3 style="color:red;font-family:langdon">Things!</h3>
+      <ul class="side-nav">
+        <li><a href="google.com" title="link to some news">News</a></li>
+        <li><a href="https://github.com/DavidAwad/">Code</a></li>
+        <li><a href="/db">Database</a></li> 
+        <li><a href="game/index.html">Try this game!</a></li>
+        <li><a href="https://www.google.com/search?q=google+images&es_sm=93&source=lnms&tbm=isch&sa=X&ei=iKMpVKCGIMOxyATQjIGwBA&ved=0CAgQ_AUoAQ&biw=1920&bih=993#tbm=isch&q=weasels">Weasels</a></li>
+      </ul>
+ 
+      <div class="panel">
+        <h5>Want to contribute? </h5>
+        <p>we're currently looking for developers and pizza artists. Specifcally anyone with experience in food service  or being awesome. You know the type.</p>
+        <a href="apply">Check us out! →</a> <!-- community link here-->
+      </div>
+    </aside>     
+  </div> 
+   
+ 
+ 
+   
+ 
+  <footer class="row">
+    <div class="large-12 columns">
+      <hr/>
+      <div class="row">
+        <div class="large-6 columns">
+          <p>© Copyright no one at all. Go to town. Website Built and Maintained by David Awad. </p>
+        </div>
+         <div class="large-6 columns">
+          <ul class="inline-list right">
+            <li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=6K7XB3RU72JDJ&lc=US&item_name=David%20Awad%21&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted" style="color:yellow" target="_blank">Donate!</a></li>
+            <!--<li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li> -->
+          </ul>
+        </div> 
+      </div>
+    </div>
+  </footer>
+        
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>

@@ -3,6 +3,9 @@ Not Suspicious Pizza
 
 #### This is a simple model for an interactive website using flask 
 
+It uses a simple SQLite database to store customer's email addresses, orders and contact information. 
+
+
 It also uses the twilio and sendgrid api's to send text messages and send out email!   
 just be mindful to add the api key's and credentials for both API's. 
 
@@ -63,6 +66,9 @@ sudo apt-get install python-pip
 ```
 pip install flask
 pip install dataset
+pip install sendgrid
+pip install twilio
+
 ```
 
 ## Run the server
@@ -80,3 +86,5 @@ python app.py
 ##[Simple Flask Guest Book](https://github.com/x/Simple-Flask-Guest-Book) by [Devin Peticolas](https://github.com/x)
 ##[Flask Talk f2014](https://github.com/usacs/flaskTalkF2014) by [Vaibhav Vverma](https://github.com/v)
 ##
+##[Databases Talk 2014](https://github.com/kaushal/databaseTalk2014) by [Kaushal](https://github.com/kaushal)
+
